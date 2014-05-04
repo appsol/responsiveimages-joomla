@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="content">
+    <name>PLG_CP_NAME</name>
+    <author>Appropriate Solutions</author>
+    <creationDate>July 2012</creationDate>
+    <copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>mail@appropriatesolutions.co.uk</authorEmail>
+    <authorUrl>www.appropriatesolutions.co.uk</authorUrl>
+    <version>0.2.2</version>
+    <description>PLG_CP_DESCRIPTION</description>
+
+    <files>
+	<filename plugin="responsiveimages">responsiveimages.php</filename>
+	<filename>index.html</filename>
+	<folder>fields</folder>
+	<folder>js</folder>
+    </files>
+    <languages folder="language">
+	<language tag="en-GB">en-GB/en-GB.plg_content_responsiveimages.ini</language>
+	<language tag="en-GB">en-GB/en-GB.plg_content_responsiveimages.sys.ini</language>
+    </languages>
+    <config>
+	<fields name="params" addfieldpath="/plugins/content/responsiveimages/fields">
+	    <fieldset name="basic">
+		<field label="FIELD_CAPTION_LABEL" name="captions" default="0" type="radio" description="FIELD_CAPTION_DESCRIPTION">
+		    <option value="1">Yes</option>
+		    <option value="0">No</option>
+		</field>
+		<field label="FIELD_IMAGESIZES_HEADING" name="imagesizes" default="" type="imagesizes" description="FIELD_IMAGESIZES_DESCRIPTION" />
+	    </fieldset>
+	</fields>
+    </config>
+
+</extension>
